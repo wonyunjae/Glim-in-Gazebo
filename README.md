@@ -82,6 +82,7 @@ https://github.com/gazebosim/ros_gz/tree/r
     
     # another terminal
     ros2 run glim_ros glim_rosnode
-  
+
+  https://youtu.be/vTyvp1hIRSU
     
    
