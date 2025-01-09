@@ -46,9 +46,45 @@ https://github.com/gazebosim/ros_gz/tree/r
 - Map 선정 및 센서 추가
     
     Glim을 위한 Gazebo 환경 설정이기에, 다양한 Gazebo worlds, models 중 slam하기에 알맞는 **tunnel.sdf** 을 선정했다.
+    ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/5578a23c-701f-49f5-9f57-ef1697adb8f3/a2431c31-9f3a-4475-8339-ecd944ddbc27/image.png)
+    ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/5578a23c-701f-49f5-9f57-ef1697adb8f3/ccadb8af-fb55-4efd-8e8c-59ceb80450c6/image.png)
+    tunnel.sdf → 1 camera, no LiDAR, no IMU
+    
+    Glim → 3D LiDAR & 9-axis IMU
+    
+    - tunnel.sdf 파일은 /usr/share/ignition/ignition-gazebo6/worlds 경로에 있다.
+- Map 선정
+    
+    Glim을 위한 Gazebo 환경 설정이기에, 다양한 Gazebo worlds, models 중 slam하기에 알맞는 **tunnel.sdf** 을 선정했다.
+    
+    **<tunnel.sdf>**
+    
+    ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/5578a23c-701f-49f5-9f57-ef1697adb8f3/a2431c31-9f3a-4475-8339-ecd944ddbc27/image.png)
+    
+    ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/5578a23c-701f-49f5-9f57-ef1697adb8f3/ccadb8af-fb55-4efd-8e8c-59ceb80450c6/image.png)
     
     tunnel.sdf → 1 camera, no LiDAR, no IMU
     
     Glim → 3D LiDAR & 9-axis IMU
     
     - tunnel.sdf 파일은 /usr/share/ignition/ignition-gazebo6/worlds 경로에 있다.
+    
+- 센서 추가
+  
+    # 소스 setup
+    cd ~/ws/src
+    git clone https://github.com/wonyunjae/Glim-in-Gazebo.git
+    git checkout master
+    
+    # build
+    cd ~/ws 
+    colcon build --symlink-install
+    
+    ros2 launch ros_gz_sim_demos tunnel_glim_bridge.launch.py
+    
+    # another terminal
+    ros2 run glim_ros glim_rosnode
+    
+    ```
+    
+    [Screencast from 01-09-2025 01:48:26 PM.webm](https://prod-files-secure.s3.us-west-2.amazonaws.com/5578a23c-701f-49f5-9f57-ef1697adb8f3/151b7829-9091-4b75-a4eb-3bafeb87972f/Screencast_from_01-09-2025_014826_PM.webm)
