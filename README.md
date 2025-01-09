@@ -58,10 +58,8 @@ https://github.com/gazebosim/ros_gz/tree/r
     Glim을 위한 Gazebo 환경 설정이기에, 다양한 Gazebo worlds, models 중 slam하기에 알맞는 **tunnel.sdf** 을 선정했다.
     
     **<tunnel.sdf>**
-    
-    ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/5578a23c-701f-49f5-9f57-ef1697adb8f3/a2431c31-9f3a-4475-8339-ecd944ddbc27/image.png)
-    
-    ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/5578a23c-701f-49f5-9f57-ef1697adb8f3/ccadb8af-fb55-4efd-8e8c-59ceb80450c6/image.png)
+    ![Screenshot from 2025-01-09 13-40-29](https://github.com/user-attachments/assets/512365cb-1db9-47c4-983a-daa2a0d553bc)
+    ![Screenshot from 2025-01-09 13-41-00](https://github.com/user-attachments/assets/98493eca-17de-4720-809e-37292fa40cc6)
     
     tunnel.sdf → 1 camera, no LiDAR, no IMU
     
@@ -84,7 +82,6 @@ https://github.com/gazebosim/ros_gz/tree/r
     
     # another terminal
     ros2 run glim_ros glim_rosnode
+  
     
-    ```
-    
-    [Screencast from 01-09-2025 01:48:26 PM.webm](https://prod-files-secure.s3.us-west-2.amazonaws.com/5578a23c-701f-49f5-9f57-ef1697adb8f3/151b7829-9091-4b75-a4eb-3bafeb87972f/Screencast_from_01-09-2025_014826_PM.webm)
+   
